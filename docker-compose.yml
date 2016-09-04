@@ -1,20 +1,17 @@
 version: '2'
 services:
-    configuration-server:
+    ratpack-echo:
         build: .
-        image: configuration-server:compose
-        container_name: "configuration-server"
+        image: ratpack-echo:compose
+        container_name: "ratpach-echo"
         network_mode: "bridge"
         restart: always
         ports:
-        - "8080:8080"
+        - "5050:5050"
         - "2020:2020"
         environment:
-            SPRING_CLOUD_CONSUL_HOST: 192.168.1.227
-            SPRING_PROFILES_ACTIVE: "default"
             JVM_HEAP_MIN: "128m"
             JVM_HEAP_MAX: "768m"
             JVM_JMX_PORT: "2020"
             JVM_JMX_RMI_PORT: "2020"
             JVM_JMX_HOST: "10.0.2.15"
-            SERVER_PORT: "8080"

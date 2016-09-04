@@ -1,5 +1,5 @@
 # Overview
-This project is a Docker image that runs [Spring Cloud](http://projects.spring.io/spring-cloud/) Configuration Server.
+This project is a Docker image that runs [Ratpack Echo](https://github.com/kurron/ratpack-echo) testing service.
 
 # Prerequisites
 * a working [Docker](http://docker.io) engine
@@ -20,7 +20,7 @@ Docker Compose will automatically install the newly built image into the cache.
 # Troubleshooting
 
 ## Check The Operations Endpoint
-Try hitting `http://localhost:2020/operations/info` to verify that the container is properly running.
+Try hitting `http://localhost:5050/` to verify that the container is properly running.
 
 # License and Credits
 This project is licensed under the [Apache License Version 2.0, January 2004](http://www.apache.org/licenses/).

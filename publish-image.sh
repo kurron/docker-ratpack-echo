@@ -8,10 +8,10 @@ fi
 
 TAG=$1
 
-TAG_COMMAND="docker tag configuration-server:compose kurron/docker-spring-cloud-configuration-server:$TAG"
+TAG_COMMAND="docker tag ratpack-echo:compose kurron/docker-ratpack-echo:$TAG"
 echo $TAG_COMMAND
 $TAG_COMMAND
 
-PUSH_COMMAND="docker push kurron/docker-spring-cloud-configuration-server:$TAG"
+PUSH_COMMAND="docker push kurron/docker-ratpack-echo:$TAG"
 echo $PUSH_COMMAND
 $PUSH_COMMAND
